@@ -18,8 +18,8 @@
     "issues": "https://github.com/soberwp/bundle/issues"
   },
   "require": {
-    "php": ">=5.4.0",
-    "composer/installers": "^1.5",
+    "php": "^7.4|^8.0",
+    "composer/installers": "^2.0",
     "hassankhan/config": "^1.0",
     "tgmpa/tgm-plugin-activation": "^2.6.1"
   },
@@ -35,5 +35,10 @@
     "test": [
       "vendor/bin/phpcs --extensions=php --ignore=vendor/ ."
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
   }
 }
